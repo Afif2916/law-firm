@@ -50,7 +50,7 @@ const Team = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="bg-primary-900 text-white py-16 sm:py-20 lg:py-24">
+      <section className="bg-neutral-900 text-white py-16 sm:py-20 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-serif font-bold text-4xl sm:text-5xl lg:text-6xl mb-4 sm:mb-6">
             Meet Our <span className="text-gold-500">Expert Team</span>
@@ -85,7 +85,7 @@ const Team = () => {
 
                 {/* Info */}
                 <div className="mb-4">
-                  <h3 className="font-serif font-bold text-2xl text-primary-900 mb-2 group-hover:text-gold-500 transition-colors duration-300">
+                  <h3 className="font-serif font-bold text-2xl text-neutral-900 mb-2 group-hover:text-gold-500 transition-colors duration-300">
                     {member.name}
                   </h3>
                   <p className="font-sans font-semibold text-gold-500 text-sm mb-3">
@@ -118,7 +118,7 @@ const Team = () => {
       {/* Expertise Areas */}
       <section className="bg-gray-50 py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-primary-900 text-center mb-12 sm:mb-16">
+          <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-neutral-900 text-center mb-12 sm:mb-16">
             Team <span className="text-gold-500">Expertise</span>
           </h2>
 
@@ -141,7 +141,7 @@ const Team = () => {
                 key={i}
                 className="bg-white rounded-lg p-4 sm:p-6 shadow-md text-center hover:shadow-lg transition-shadow duration-300 border border-gray-200 flex items-center justify-center min-h-[80px]"
                 >
-                <p className="font-sans font-semibold text-primary-900 text-sm sm:text-base">
+                <p className="font-sans font-semibold text-neutral-900 text-sm sm:text-base">
                     {expertise}
                 </p>
                 </div>
@@ -151,7 +151,7 @@ const Team = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-primary-900 text-white py-16 sm:py-20 lg:py-24">
+      <section className="bg-neutral-900 text-white py-16 sm:py-20 lg:py-24">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6">
             Work With Our <span className="text-gold-500">Experts</span>
@@ -161,7 +161,7 @@ const Team = () => {
           </p>
           <a
             href="/contact"
-            className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-gold-500 text-primary-900 font-sans font-bold rounded-lg hover:bg-gold-600 transition-all duration-300 transform hover:scale-105"
+            className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-gold-500 text-neutral-900 font-sans font-bold rounded-lg hover:bg-gold-600 transition-all duration-300 transform hover:scale-105"
           >
             Schedule a Consultation
           </a>

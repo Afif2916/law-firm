@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="bg-primary-900 text-white py-16 sm:py-20 lg:py-24">
+      <section className="bg-neutral-900 text-white py-16 sm:py-20 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-serif font-bold text-4xl sm:text-5xl lg:text-6xl mb-4 sm:mb-6">
             About <span className="text-gold-500">Contoh Lawfirm & Associates</span>
@@ -35,7 +35,7 @@ const About = () => {
 
             {/* Right - Content */}
             <div className="animate-slide-in-right">
-              <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-primary-900 mb-6">
+              <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-neutral-900 mb-6">
                 Our <span className="text-gold-500">Story</span>
               </h2>
 
@@ -56,7 +56,7 @@ const About = () => {
               <div className="w-16 h-16 flex items-center justify-center bg-primary-100 rounded-full mb-4">
                 <FaBullseye className="text-2xl text-gold-500" />
               </div>
-              <h3 className="font-serif font-bold text-2xl text-primary-900 mb-4">Our Vision</h3>
+              <h3 className="font-serif font-bold text-2xl text-neutral-900 mb-4">Our Vision</h3>
               <p className="font-sans text-gray-600 leading-relaxed">
                 To be the leading provider of innovative legal solutions, recognized for our integrity, expertise, and unwavering commitment to advancing our clients' interests.
               </p>
@@ -67,7 +67,7 @@ const About = () => {
               <div className="w-16 h-16 flex items-center justify-center bg-primary-100 rounded-full mb-4">
                 <FaBalanceScale className="text-2xl text-gold-500" />
               </div>
-              <h3 className="font-serif font-bold text-2xl text-primary-900 mb-4">Our Mission</h3>
+              <h3 className="font-serif font-bold text-2xl text-neutral-900 mb-4">Our Mission</h3>
               <p className="font-sans text-gray-600 leading-relaxed">
                 Empowering businesses and individuals through strategic legal counsel, delivering exceptional results while maintaining the highest ethical and professional standards.
               </p>
@@ -78,7 +78,7 @@ const About = () => {
               <div className="w-16 h-16 flex items-center justify-center bg-gold-100 rounded-full mb-4">
                 <FaGem className="text-2xl text-gold-500" />
               </div>
-              <h3 className="font-serif font-bold text-2xl text-primary-900 mb-4">Our Values</h3>
+              <h3 className="font-serif font-bold text-2xl text-neutral-900 mb-4">Our Values</h3>
               <p className="font-sans text-gray-600 leading-relaxed">
                 Integrity, excellence, client-focused service, and continuous innovation. These core values guide every decision and action we take.
               </p>
@@ -86,7 +86,7 @@ const About = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="bg-gradient-to-r from-primary-800 to-primary-900 rounded-2xl p-8 sm:p-12 lg:p-16 text-white">
+          <div className="bg-gradient-to-r from-primary-700 to-primary-500 rounded-2xl p-8 sm:p-12 lg:p-16 text-white">
             <h2 className="font-serif font-bold text-3xl sm:text-4xl text-center mb-12 sm:mb-16">
               By The Numbers
             </h2>
@@ -113,7 +113,7 @@ const About = () => {
 
           {/* Team Highlight */}
           <div className="mt-16 sm:mt-20 lg:mt-24">
-            <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-primary-900 text-center mb-6 sm:mb-8">
+            <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-neutral-900 text-center mb-6 sm:mb-8">
               Our <span className="text-gold-500">Leadership</span>
             </h2>
             <p className="font-sans text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12 sm:mb-16">

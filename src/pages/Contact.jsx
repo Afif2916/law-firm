@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="bg-primary-900 text-white py-16 sm:py-20 lg:py-24">
+      <section className="bg-neutral-900 text-white py-16 sm:py-20 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-serif font-bold text-4xl sm:text-5xl lg:text-6xl mb-4 sm:mb-6">
             Get In <span className="text-gold-500">Touch</span>
@@ -55,7 +55,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             {/* Left - Contact Information */}
             <div className="animate-slide-in-left">
-              <h2 className="font-serif font-bold text-3xl sm:text-4xl text-primary-900 mb-8">
+              <h2 className="font-serif font-bold text-3xl sm:text-4xl text-neutral-900 mb-8">
                 Contact <span className="text-gold-500">Information</span>
               </h2>
 
@@ -76,7 +76,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-sans font-semibold text-lg text-primary-900 mb-2">Office Location</h3>
+                    <h3 className="font-sans font-semibold text-lg text-neutral-900 mb-2">Office Location</h3>
                     <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{address}</p>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-sans font-semibold text-lg text-primary-900 mb-2">Phone Number</h3>
+                    <h3 className="font-sans font-semibold text-lg text-neutral-900 mb-2">Phone Number</h3>
                     <a
                       href={`tel:${phoneNumber}`}
                       className="text-gold-500 hover:text-gold-600 transition-colors duration-300 text-sm sm:text-base"
@@ -111,7 +111,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-sans font-semibold text-lg text-primary-900 mb-2">Email Address</h3>
+                    <h3 className="font-sans font-semibold text-lg text-neutral-900 mb-2">Email Address</h3>
                     <a
                       href={`mailto:${email}`}
                       className="text-gold-500 hover:text-gold-600 transition-colors duration-300 text-sm sm:text-base"
@@ -131,7 +131,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-sans font-semibold text-lg text-primary-900 mb-2">WhatsApp</h3>
+                    <h3 className="font-sans font-semibold text-lg text-neutral-900 mb-2">WhatsApp</h3>
                     <a
                       href={`https://wa.me/${phoneWhatsApp}`}
                       target="_blank"
@@ -161,7 +161,7 @@ const Contact = () => {
             {/* Right - Contact Form */}
             <div className="animate-slide-in-right">
               <form onSubmit={handleSubmit} className="bg-gray-50 rounded-2xl p-8 sm:p-10 lg:p-8 shadow-lg border border-gray-200">
-                <h3 className="font-serif font-bold text-2xl sm:text-3xl text-primary-900 mb-8">Send us a Message</h3>
+                <h3 className="font-serif font-bold text-2xl sm:text-3xl text-neutral-900 mb-8">Send us a Message</h3>
 
                 {submitted && (
                   <div className="mb-6 p-4 bg-green-500 text-white rounded-lg font-sans font-semibold animate-fade-in-up">
@@ -252,7 +252,7 @@ const Contact = () => {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full px-6 py-4 bg-gold-500 text-primary-900 font-sans font-bold rounded-lg hover:bg-gold-600 transition-all duration-300 hover:shadow-lg transform hover:scale-105 text-base sm:text-lg"
+                    className="w-full px-6 py-4 bg-gold-500 text-neutral-900 font-sans font-bold rounded-lg hover:bg-gold-600 transition-all duration-300 hover:shadow-lg transform hover:scale-105 text-base sm:text-lg"
                   >
                     Send Message
                   </button>

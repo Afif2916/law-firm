@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 // Premium navbar with React Router navigation, mobile hamburger menu, and sticky blur background
 const Navbar = () => {
@@ -27,6 +28,7 @@ const Navbar = () => {
     { label: 'About', path: '/about' },
     { label: 'Services', path: '/services' },
     { label: 'Team', path: '/team' },
+    { label: 'Articles', path: '/contact' },
     { label: 'Contact', path: '/contact' },
   ]
 
@@ -40,7 +42,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-white shadow-lg backdrop-blur-md bg-opacity-95'
-          : 'bg-transparent'
+          : 'bg-white'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,28 +50,14 @@ const Navbar = () => {
           {/* Logo - Interactive Link to Home */}
           <Link
             to="/"
-            className="flex items-center gap-2 hover:opacity-80 transition-opacity duration-300 group"
-          >
-            <div className="text-3xl font-bold text-gold-500 group-hover:scale-110 transition-transform duration-300">
-              CL
-            </div>
-            <div>
-              <h1
-                className={`font-serif font-bold text-2xl transition-colors duration-300 ${
-                  isScrolled ? 'text-primary-800' : 'text-primary-800'
-                }`}
-              >
-                Contoh Lawfirm
-              </h1>
-              <p
-                className={`text-xs transition-colors duration-300 ${
-                  isScrolled ? 'text-primary-600' : 'text-gold-500'
-                }`}
-              >
-                & Associates
-              </p>
-            </div>
-          </Link>
+            className="flex items-center hover:opacity-80 transition-opacity duration-300 group"
+            >
+            <img
+                src={logo}
+                alt="Contoh Lawfirm"
+                className="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+            </Link>
 
           {/* Navigation Menu - Desktop */}
           <div className="hidden md:flex gap-1">
@@ -79,15 +67,15 @@ const Navbar = () => {
                 to={item.path}
                 className={`relative px-4 py-2 font-sans font-medium transition-all duration-300 ${
                   isActive(item.path)
-                    ? 'text-gold-500'
+                    ? 'text-primary-500'
                     : isScrolled
-                    ? 'text-primary-800 hover:text-gold-500'
-                    : 'text-primary-800 hover:text-gold-500'
+                    ? 'text-gray-800 hover:text-primary-500'
+                    : 'text-gray-800 hover:text-primary-500'
                 }`}
               >
                 {item.label}
                 {isActive(item.path) && (
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-gold-400 to-gold-600 rounded"></span>
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-primary-400 to-primary-600 rounded"></span>
                 )}
               </Link>
             ))}

@@ -23,7 +23,7 @@ const Services = () => {
     },
     {
       id: 2,
-      title: "litigationIcon",
+      title: 'Litigation',
       icon: litigationIcon,
       description: 'Aggressive representation in civil, commercial, and corporate disputes with proven track record of success.',
       features: [
@@ -47,7 +47,7 @@ const Services = () => {
     },
     {
       id: 4,
-      title: "contractIcon",
+      title: 'Contract Law',
       icon: contractIcon,
       description: 'Precision-crafted contracts and agreements protecting your interests in all business transactions.',
       features: [
@@ -59,7 +59,7 @@ const Services = () => {
     },
     {
       id: 5,
-      title: "compilanceIcon",
+      title: 'Compliance',
       icon: compilanceIcon,
       description: 'Comprehensive compliance solutions ensuring your organization meets all regulatory requirements.',
       features: [
@@ -71,7 +71,7 @@ const Services = () => {
     },
     {
       id: 6,
-      title: investmentIcon,
+      title: 'Investment Advisory',
       icon: investmentIcon,
       description: 'Legal structuring and due diligence services for investment opportunities and portfolio management.',
       features: [
@@ -86,7 +86,7 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="bg-primary-900 text-white py-16 sm:py-20 lg:py-24">
+      <section className="bg-neutral-900 text-white py-16 sm:py-20 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-serif font-bold text-4xl sm:text-5xl lg:text-6xl mb-4 sm:mb-6">
             Our <span className="text-gold-500">Legal Services</span>
@@ -110,7 +110,7 @@ const Services = () => {
                 }}
               >
                 {/* Card Header with Icon */}
-                <div className="relative h-40 sm:h-48 bg-gradient-to-br from-primary-800 to-primary-900 flex items-center justify-center overflow-hidden">
+                <div className="relative h-40 sm:h-48 bg-gradient-to-br from-neutral-700 to-neutral-900 flex items-center justify-center overflow-hidden">
   
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-gold-500 transition-opacity duration-300"></div>
 
@@ -124,7 +124,7 @@ const Services = () => {
 
                 {/* Card Content */}
                 <div className="p-6 sm:p-8">
-                  <h3 className="font-serif font-bold text-2xl text-primary-900 mb-3 group-hover:text-gold-500 transition-colors duration-300">
+                  <h3 className="font-serif font-bold text-2xl text-neutral-900 mb-3 group-hover:text-gold-500 transition-colors duration-300">
                     {service.title}
                   </h3>
                   <p className="font-sans text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
@@ -163,7 +163,7 @@ const Services = () => {
 
     {/* Title */}
     <div className="text-center mb-16">
-      <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-primary-900">
+                      <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-neutral-900">
         How We <span className="text-gold-500">Work</span>
       </h2>
       <p className="mt-4 text-gray-600 max-w-xl mx-auto">
@@ -189,14 +189,14 @@ const Services = () => {
           <div key={i} className="relative flex flex-col items-center text-center group">
 
             {/* Step circle */}
-            <div className="z-10 w-16 h-16 flex items-center justify-center rounded-full bg-gold-500 text-primary-900 font-bold text-xl shadow-lg group-hover:scale-110 transition-transform">
+            <div className="z-10 w-16 h-16 flex items-center justify-center rounded-full bg-gold-500 text-neutral-900 font-bold text-xl shadow-lg group-hover:scale-110 transition-transform">
               {step.num}
             </div>
 
             {/* Card */}
             <div className="mt-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 max-w-xs">
 
-              <h3 className="font-serif font-bold text-xl text-primary-900 mb-2">
+              <h3 className="font-serif font-bold text-xl text-neutral-900 mb-2">
                 {step.title}
               </h3>
 
@@ -214,10 +214,10 @@ const Services = () => {
     </div>
 
   </div>
-</section>
+    </section>
 
       {/* CTA Section */}
-      <section className="bg-primary-900 text-white py-16 sm:py-20 lg:py-24">
+      <section className="bg-neutral-900 text-white py-16 sm:py-20 lg:py-24">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6">
             Need Legal Assistance?
@@ -227,7 +227,7 @@ const Services = () => {
           </p>
           <a
             href="/contact"
-            className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-gold-500 text-primary-900 font-sans font-bold rounded-lg hover:bg-gold-600 transition-all duration-300 transform hover:scale-105"
+            className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-gold-500 text-neutral-900 font-sans font-bold rounded-lg hover:bg-gold-600 transition-all duration-300 transform hover:scale-105"
           >
             Get Started Today
           </a>
