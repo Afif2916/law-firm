@@ -11,9 +11,11 @@ import {
   FaCheckCircle,
   FaArrowRight,
   FaPlay,
-  FaQuoteLeft
+  FaQuoteLeft,
+  FaUserTie
 } from 'react-icons/fa'
 import { HiDocumentText } from 'react-icons/hi'
+import WhyChooseUs from '../components/WhyChooseUs'
 
 // Home page with comprehensive professional law firm sections
 const Home = () => {
@@ -49,28 +51,28 @@ const Home = () => {
     },
   ]
 
-  const whyChooseUs = [
+    const whyChooseUs = [
     {
-      icon: FaAward,
-      title: 'Excellence',
-      desc: '30+ years of combined experience delivering exceptional legal outcomes.'
+        icon: FaBalanceScale,
+        title: "Experienced Attorneys",
+        desc: "Our lawyers bring years of experience handling complex legal matters."
     },
     {
-      icon: FaShieldAlt,
-      title: 'Trust',
-      desc: 'Built on integrity, transparency, and unwavering commitment to clients.'
+        icon: FaUserTie,
+        title: "Professional Service",
+        desc: "We maintain the highest standards of professionalism and integrity."
     },
     {
-      icon: FaHandshake,
-      title: 'Partnership',
-      desc: 'We treat every case as a partnership, working closely with you toward success.'
+        icon: FaShieldAlt,
+        title: "Client Protection",
+        desc: "Your legal interests and confidentiality are always protected."
     },
     {
-      icon: FaClock,
-      title: 'Efficiency',
-      desc: 'Timely resolution with strategic approaches that save time and resources.'
-    },
-  ]
+        icon: FaHandshake,
+        title: "Trusted Partnership",
+        desc: "We build long-term relationships with our clients based on trust."
+    }
+    ]
 
   const process = [
     {
@@ -352,43 +354,16 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 lg:py-28 bg-neutral-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block px-4 py-1.5 bg-gold-500/10 text-gold-500 font-sans text-sm font-medium rounded-full mb-4">
-              Why Choose Us
-            </span>
-            <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-white mb-4">
-              Built on <span className="text-gold-500">Trust & Excellence</span>
-            </h2>
-            <p className="font-sans text-lg text-gray-400 leading-relaxed">
-              We combine legal expertise with unwavering dedication to achieve the best outcomes for our clients.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {whyChooseUs.map((item, index) => {
-              const Icon = item.icon
-              return (
-                <div
-                  key={index}
-                  className="text-center p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-gold-500/50 hover:bg-white/10 transition-all duration-500"
-                >
-                  <div className="w-16 h-16 bg-gold-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Icon className="text-2xl text-gold-500" />
-                  </div>
-                  <h3 className="font-serif font-bold text-xl text-white mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="font-sans text-gray-400 leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
+      <WhyChooseUs
+        subtitle="Why Choose Us"
+        title={
+          <>
+            Built on <span className="text-gold-500">Trust & Excellence</span>
+          </>
+        }
+        description="We combine legal expertise with unwavering dedication to achieve the best outcomes for our clients."
+        items={whyChooseUs}
+      />
 
       {/* How We Work - Timeline */}
       <section className="bg-gray-50 py-16 sm:py-20 lg:py-24">
